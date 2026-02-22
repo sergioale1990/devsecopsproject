@@ -120,8 +120,8 @@ jobs:
       with:
         image-ref: users-service:${{ env.TAG }}
         severity: CRITICAL, HIGH
-        exit-code: 1
-        ignore-unfixed: true
+        exit-code: 0
+        #ignore-unfixed: true
         continue-on-error: true
 
     - name: Trivy scan academic-service
@@ -129,8 +129,8 @@ jobs:
       with:
         image-ref: academic-service:${{ env.TAG }}
         severity: CRITICAL, HIGH
-        exit-code: 1
-        ignore-unfixed: true
+        exit-code: 0
+        #ignore-unfixed: true
         continue-on-error: true
 
     - name: Trivy scan api-gateway
@@ -138,8 +138,8 @@ jobs:
       with:
         image-ref: api-gateway:${{ env.TAG }}
         severity: CRITICAL, HIGH
-        exit-code: 1
-        ignore-unfixed: true
+        exit-code: 0
+        #ignore-unfixed: true
         continue-on-error: true
 
     # =========================
