@@ -119,7 +119,7 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: users-service:${{ env.TAG }}
-        severity: HIGH
+        severity: CRITICAL, HIGH
         exit-code: 1
         ignore-unfixed: true
 
@@ -127,7 +127,7 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: academic-service:${{ env.TAG }}
-        severity: HIGH
+        severity: CRITICAL, HIGH
         exit-code: 1
         ignore-unfixed: true
 
@@ -135,7 +135,7 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: api-gateway:${{ env.TAG }}
-        severity: HIGH
+        severity: CRITICAL, HIGH
         exit-code: 1
         ignore-unfixed: true
 
