@@ -1,7 +1,7 @@
 name: DevSecOps CI/CD Pipeline
 on:
   push:
-    branches: [ "frontendTest" ]
+    branches: [ "main" ]
   pull_request:
 jobs:
   devsecops:
