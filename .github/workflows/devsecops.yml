@@ -51,18 +51,21 @@ jobs:
       run: |
         cd backend/users-service
         npm ci
+        npm run lint
         npm test
 
     - name: Install & Test academic-service
       run: |
         cd backend/academic-service
         npm ci
+        npm run lint
         npm test
 
     - name: Install & Test api-gateway
       run: |
         cd backend/api-gateway
         npm ci
+        npm run lint
         npm test
 
     # =========================
