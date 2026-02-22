@@ -28,5 +28,8 @@
     "eslint": "^10.0.1",
     "globals": "^17.3.0",
     "nodemon": "^3.1.11"
+  },
+  "overrides": {
+    "minimatch": "^10.2.2"
   }
 }
