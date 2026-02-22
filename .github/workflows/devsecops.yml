@@ -51,6 +51,7 @@ jobs:
       run: |
         cd backend/users-service
         npm ci
+        npm audit --audit-level=high
         npm run lint
         npm test
 
@@ -58,6 +59,7 @@ jobs:
       run: |
         cd backend/academic-service
         npm ci
+        npm audit --audit-level=high
         npm run lint
         npm test
 
@@ -65,6 +67,7 @@ jobs:
       run: |
         cd backend/api-gateway
         npm ci
+        npm audit --audit-level=high
         npm run lint
         npm test
 
@@ -75,6 +78,7 @@ jobs:
       run: |
         cd frontend
         npm ci
+        npm audit --audit-level=high
         npm run lint
         npm test
     # =========================
